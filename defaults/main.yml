@@ -49,9 +49,15 @@ undbound_config:
   # auth-zone options list, each one must have a name:
   #   if you use just one list entry, you can define it directly as a dict
   auth-zone: []
-  # view options list. each with a name: and zero or more local-zone and local-data elements
+  # view options list, each with a name: and zero or more local-zone and local-data elements
   #   if you use just one list entry, you can define it directly as a dict
   view: []
+  # example:
+  # view:
+  #   - name: view1
+  #     local-zone: abc.example.com transparent
+  #   - name: view2
+  #     local-zone: xyz.example.com transparent
   # optional further sections for unbound like
   # python: []
   # dynlib-file: []
