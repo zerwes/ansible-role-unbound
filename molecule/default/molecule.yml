@@ -68,7 +68,9 @@ provisioner:
               - 9.9.9.9
           view:
             - name: view1
-              local-zone: abc.example.com transparent
+              local-zone:
+                - abc.example.com transparent
+                - another.example.com transparent
             - name: view2
               local-zone: xyz.example.com transparent
 
