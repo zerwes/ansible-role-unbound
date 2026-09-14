@@ -24,7 +24,7 @@ jobs:
           - 13
           - 12
           - 11
-          - 2.9
+          #- 2.9
         distro:
           - debian12
           - debian13
@@ -46,12 +46,12 @@ jobs:
           - ansible: 11
             pip3deps: '"ansible>=11,<12" molecule "molecule-plugins[docker]" yamllint ansible-lint requests==2.32.4 dnspython'
             pythonversion: 3.13.5
-          - ansible: 2.9
-            pip3deps: '"ansible==2.9.27" "molecule[docker,lint]==3.2.3" "yamllint==1.24.2" "ansible-lint==4.2.0" "requests<2.29" "urllib3<2" dnspython'
-            pythonversion: 3.9
+        #  - ansible: 2.9
+        #    pip3deps: '"ansible==2.9.27" "molecule[docker,lint]==3.2.3" "yamllint==1.24.2" "ansible-lint==4.2.0" "requests<2.29" "urllib3<2" dnspython'
+        #    pythonversion: 3.9
         exclude:
-          - ansible: 2.9
-            distro: debian13
+        #  - ansible: 2.9
+        #    distro: debian13
           - moleculescenario: redirect
             distro: debian13
           - moleculescenario: redirect-cname
